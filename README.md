@@ -47,6 +47,7 @@ window?.rootViewController = fzhTabBar
 
 ## Contributing
 * Fork it
+* If you think the framework is not bad, please start it
 * If you find any problem, please add issue
 * Create new Pull Request
 
