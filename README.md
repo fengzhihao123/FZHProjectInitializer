@@ -1,5 +1,5 @@
 # FZHProjectInitializer
-a convenient Initializer
+FZHProjectInitializer is an convenient initialize project library written in Swift
 
 ## Requirements
 * iOS 9.0+
@@ -38,7 +38,6 @@ fzhTabBar.setupChildVC(secondVC, title: "second", imageName: "", selectImageName
 fzhTabBar.setupChildVC(thirdVC, title: "third", imageName: "", selectImageName: "")
 fzhTabBar.setupChildVC(fourVC, title: "four", imageName: "", selectImageName: "")
 window?.rootViewController = fzhTabBar
-
 ```
 
 ## Contributing
