@@ -47,10 +47,7 @@ window?.rootViewController = fzhTabBar
 
 ## Contributing
 * Fork it
-* If you find any problem, please add new issue
-* Create your feature branch (git checkout -b my-new-feature)
-* Commit your changes (git commit -am 'Add some feature')
-* Push to the branch (git push origin my-new-feature)
+* If you find any problem, please add issue
 * Create new Pull Request
 
 ## LICENSE
