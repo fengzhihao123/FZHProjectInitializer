@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let fzhTabBar = FZHTabBarViewController()
         fzhTabBar.selectColor = UIColor.red
+        fzhTabBar.normalColor = UIColor.brown
+        fzhTabBar.isAnimation = TabbarHideStyle.tabbarHideWithNoAnimation
         fzhTabBar.setupChildVC(firstVC, title: "first", imageName: "", selectImageName: "")
         fzhTabBar.setupChildVC(secondVC, title: "second", imageName: "", selectImageName: "")
         fzhTabBar.setupChildVC(thirdVC, title: "third", imageName: "", selectImageName: "")
