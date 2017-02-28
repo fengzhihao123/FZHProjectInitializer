@@ -1,5 +1,5 @@
 # FZHProjectInitializer
-FZHProjectInitializer is an convenient initialize project library written in Swift
+FZHProjectInitializer is a convenient initialize project library written in Swift
 
 ## Intro
 
