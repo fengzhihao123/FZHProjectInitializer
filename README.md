@@ -8,6 +8,17 @@ FZHProjectInitializer is a convenient initialize project library written in Swif
 
 ## Features
 
+Hide TabBar two ways
+* no animations
+```
+let rootVC = FZHTabBarViewController()
+rootVC.isAnimation = TabbarHideStyle.tabbarHideWithNoAnimation
+```
+* have animations
+```
+let rootVC = FZHTabBarViewController()
+rootVC.isAnimation = TabbarHideStyle.tabbarHideWithAnimation
+```
 
 
 ## Requirements
