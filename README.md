@@ -6,6 +6,10 @@ FZHProjectInitializer is a convenient initialize project library written in Swif
 * version: 0.0.1
 * platform: iOS
 
+## Features
+
+
+
 ## Requirements
 * iOS 9.0+
 * Xcode 8.1+
