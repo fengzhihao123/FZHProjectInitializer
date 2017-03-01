@@ -14,7 +14,7 @@ Hide TabBar two ways
 let rootVC = FZHTabBarViewController()
 rootVC.isAnimation = TabbarHideStyle.tabbarHideWithNoAnimation
 ```
-![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/Animation.gif)
+![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/NoAnimation.gif)
 
 * have animations
 ```
@@ -22,7 +22,7 @@ let rootVC = FZHTabBarViewController()
 rootVC.isAnimation = TabbarHideStyle.tabbarHideWithAnimation
 ```
 
-![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/NoAnimation.gif)
+![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/Animation.gif)
 
 ## Requirements
 * iOS 9.0+
