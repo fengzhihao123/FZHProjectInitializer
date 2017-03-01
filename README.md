@@ -1,6 +1,8 @@
 # FZHProjectInitializer
 FZHProjectInitializer is a convenient initialize project library written in Swift
 
+[中文介绍](https://fengzhihao123.github.io/2017/03/01/FZHProjectInitializer%E4%BB%8B%E7%BB%8D/)
+
 ## Intro
 
 * version: 0.0.2
@@ -8,7 +10,21 @@ FZHProjectInitializer is a convenient initialize project library written in Swif
 
 ## Features
 
+Hide TabBar two ways
+* no animations
+```
+let rootVC = FZHTabBarViewController()
+rootVC.isAnimation = TabbarHideStyle.tabbarHideWithNoAnimation
+```
+![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/NoAnimation.gif)
 
+* have animations
+```
+let rootVC = FZHTabBarViewController()
+rootVC.isAnimation = TabbarHideStyle.tabbarHideWithAnimation
+```
+
+![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/Animation.gif)
 
 ## Requirements
 * iOS 9.0+
@@ -48,6 +64,9 @@ fzhTabBar.setupChildVC(thirdVC, title: "third", imageName: "", selectImageName: 
 fzhTabBar.setupChildVC(fourVC, title: "four", imageName: "", selectImageName: "")
 window?.rootViewController = fzhTabBar
 ```
+
+* TabBarButton select color is blue by default,If you want custom the select color,you can change it by use `selectColor`property.
+* TabBarButton normal color is black by default,If you want custom the normal color,you can change it use `normalColor`property.
 
 ## Contributing
 * Fork it
