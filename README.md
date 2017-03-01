@@ -63,6 +63,9 @@ fzhTabBar.setupChildVC(fourVC, title: "four", imageName: "", selectImageName: ""
 window?.rootViewController = fzhTabBar
 ```
 
+* TabBarButton select color is blue by default,If you want custom the select color,you can change it by use `selectColor`property.
+* TabBarButton normal color is black by default,If you want custom the normal color,you can change it use `normalColor`property.
+
 ## Contributing
 * Fork it
 * If you think the framework is not bad, please start it
