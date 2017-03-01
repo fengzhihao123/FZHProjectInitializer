@@ -48,5 +48,37 @@ public class FZHNavigationController: UINavigationController {
         super.pushViewController(viewController, animated: true)
     }
     
+    public override func popToRootViewController(animated: Bool) -> [UIViewController]? {
+        if self.viewControllers.count > 0 {
+            let rootVC = self.viewControllers[0]
+            if tabbarHideStyle == TabbarHideStyle.tabbarHideWithAnimation {
+                UIView.animate(withDuration: 0.35, animations: {
+                    rootVC.tabBarController?.tabBar.transform = CGAffineTransform.identity
+                })
+            }else{
+                let rootVC = self.viewControllers[0]
+                rootVC.hidesBottomBarWhenPushed = false
+            }
+        }
+        super.popToRootViewController(animated: true)
+        return nil
+    }
+    
+    public override func popViewController(animated: Bool) -> UIViewController? {
+        if self.viewControllers.count > 0 {
+            let rootVC = self.viewControllers[0]
+            if tabbarHideStyle == TabbarHideStyle.tabbarHideWithAnimation {
+                UIView.animate(withDuration: 0.35, animations: {
+                    rootVC.tabBarController?.tabBar.transform = CGAffineTransform.identity
+                })
+            }else{
+                let rootVC = self.viewControllers[0]
+                rootVC.hidesBottomBarWhenPushed = false
+            }
+        }
+        let rootVC = self.viewControllers[0]
+        super.popViewController(animated: true)
+        return rootVC
+    }
     
 }

@@ -45,7 +45,7 @@ class FZHTabBarButton: UIButton {
     override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
         let imageH = contentRect.size.height * CGFloat(tabbarImageRatio)
         let imageW = contentRect.size.width
-        return CGRect(x: 0, y: 0, width: imageW, height: imageH)
+        return CGRect(x: 0, y: 5, width: imageW, height: imageH)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/fengzhihao123/FZHProjectInitializer.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/fengzhihao123/FZHProjectInitializer.git", :commit => "e004159d7d4cf32734ca52680b6af1bd5516aaf2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "FZHProjectInitializer", "FZHTabBarController/*.{swift}"
+  s.source_files  = "FZHProjectInitializer","FZHProjectInitializer/**/*.{swift}"
   #  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

@@ -13,9 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let firstVC = UIViewController()
+        let firstVC = ViewController()
         let secondVC = UIViewController()
         let thirdVC = UIViewController()
         let fourVC = UIViewController()
@@ -23,11 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let fzhTabBar = FZHTabBarViewController()
         fzhTabBar.selectColor = UIColor.red
         fzhTabBar.normalColor = UIColor.brown
-        fzhTabBar.isAnimation = TabbarHideStyle.tabbarHideWithNoAnimation
-        fzhTabBar.setupChildVC(firstVC, title: "first", imageName: "", selectImageName: "")
-        fzhTabBar.setupChildVC(secondVC, title: "second", imageName: "", selectImageName: "")
-        fzhTabBar.setupChildVC(thirdVC, title: "third", imageName: "", selectImageName: "")
-        fzhTabBar.setupChildVC(fourVC, title: "four", imageName: "", selectImageName: "")
+        fzhTabBar.isAnimation = TabbarHideStyle.tabbarHideWithAnimation
+        fzhTabBar.setupChildVC(firstVC, title: "first", imageName: "normal", selectImageName: "select")
+        fzhTabBar.setupChildVC(secondVC, title: "second", imageName: "normal", selectImageName: "select")
+        fzhTabBar.setupChildVC(thirdVC, title: "third", imageName: "normal", selectImageName: "select")
+        fzhTabBar.setupChildVC(fourVC, title: "four", imageName: "normal", selectImageName: "select")
         window?.rootViewController = fzhTabBar
         return true
     }

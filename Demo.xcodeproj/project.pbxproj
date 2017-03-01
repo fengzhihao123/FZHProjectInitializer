@@ -20,10 +20,10 @@
 		D65E0AD51E653F6F00DA6A5C /* FZHProjectInitializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65E0AC01E653F6F00DA6A5C /* FZHProjectInitializer.framework */; };
 		D65E0AD61E653F6F00DA6A5C /* FZHProjectInitializer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D65E0AC01E653F6F00DA6A5C /* FZHProjectInitializer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D65E0AE41E653F9400DA6A5C /* FZHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0ADF1E653F9400DA6A5C /* FZHNavigationController.swift */; };
-		D65E0AE51E653F9400DA6A5C /* FZHRootBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE01E653F9400DA6A5C /* FZHRootBaseViewController.swift */; };
 		D65E0AE61E653F9400DA6A5C /* FZHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */; };
 		D65E0AE71E653F9400DA6A5C /* FZHTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */; };
 		D65E0AE81E653F9400DA6A5C /* FZHTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE31E653F9400DA6A5C /* FZHTabBarViewController.swift */; };
+		D6BD177B1E6648D5006CB3B7 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BD177A1E6648D5006CB3B7 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,10 +99,10 @@
 		D65E0ACF1E653F6F00DA6A5C /* FZHProjectInitializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZHProjectInitializerTests.swift; sourceTree = "<group>"; };
 		D65E0AD11E653F6F00DA6A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D65E0ADF1E653F9400DA6A5C /* FZHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHNavigationController.swift; sourceTree = "<group>"; };
-		D65E0AE01E653F9400DA6A5C /* FZHRootBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHRootBaseViewController.swift; sourceTree = "<group>"; };
 		D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBar.swift; sourceTree = "<group>"; };
 		D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBarButton.swift; sourceTree = "<group>"; };
 		D65E0AE31E653F9400DA6A5C /* FZHTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBarViewController.swift; sourceTree = "<group>"; };
+		D6BD177A1E6648D5006CB3B7 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +175,7 @@
 			children = (
 				D65E0A8D1E653F2300DA6A5C /* AppDelegate.swift */,
 				D65E0A8F1E653F2300DA6A5C /* ViewController.swift */,
+				D6BD177A1E6648D5006CB3B7 /* SubViewController.swift */,
 				D65E0A911E653F2300DA6A5C /* Main.storyboard */,
 				D65E0A941E653F2300DA6A5C /* Assets.xcassets */,
 				D65E0A961E653F2300DA6A5C /* LaunchScreen.storyboard */,
@@ -224,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				D65E0ADF1E653F9400DA6A5C /* FZHNavigationController.swift */,
-				D65E0AE01E653F9400DA6A5C /* FZHRootBaseViewController.swift */,
 				D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */,
 				D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */,
 				D65E0AE31E653F9400DA6A5C /* FZHTabBarViewController.swift */,
@@ -446,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BD177B1E6648D5006CB3B7 /* SubViewController.swift in Sources */,
 				D65E0A901E653F2300DA6A5C /* ViewController.swift in Sources */,
 				D65E0A8E1E653F2300DA6A5C /* AppDelegate.swift in Sources */,
 			);
@@ -473,7 +474,6 @@
 			files = (
 				D65E0AE71E653F9400DA6A5C /* FZHTabBarButton.swift in Sources */,
 				D65E0AE61E653F9400DA6A5C /* FZHTabBar.swift in Sources */,
-				D65E0AE51E653F9400DA6A5C /* FZHRootBaseViewController.swift in Sources */,
 				D65E0AE81E653F9400DA6A5C /* FZHTabBarViewController.swift in Sources */,
 				D65E0AE41E653F9400DA6A5C /* FZHNavigationController.swift in Sources */,
 			);
@@ -807,6 +807,7 @@
 				D65E0AB41E653F2300DA6A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D65E0AB51E653F2300DA6A5C /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +816,7 @@
 				D65E0AB71E653F2300DA6A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D65E0AB81E653F2300DA6A5C /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -823,6 +825,7 @@
 				D65E0ABA1E653F2300DA6A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D65E0AD71E653F6F00DA6A5C /* Build configuration list for PBXNativeTarget "FZHProjectInitializer" */ = {
 			isa = XCConfigurationList;
@@ -831,6 +834,7 @@
 				D65E0AD91E653F6F00DA6A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D65E0ADB1E653F6F00DA6A5C /* Build configuration list for PBXNativeTarget "FZHProjectInitializerTests" */ = {
 			isa = XCConfigurationList;
@@ -839,6 +843,7 @@
 				D65E0ADD1E653F6F00DA6A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
