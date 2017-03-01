@@ -36,7 +36,6 @@ public class FZHNavigationController: UINavigationController {
     override public func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {
             let rootVC = self.viewControllers[0]
-//            是否添加动画
             if tabbarHideStyle == TabbarHideStyle.tabbarHideWithAnimation {
                 UIView.animate(withDuration: 0.35, animations: {
                     rootVC.tabBarController?.tabBar.transform = CGAffineTransform(translationX: 0, y: 64)

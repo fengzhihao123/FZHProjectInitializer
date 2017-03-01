@@ -62,7 +62,6 @@ public class FZHTabBar: UIView {
 //            3.绑定tag
             button.tag = index
         }
-        
     }
     
 }

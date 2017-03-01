@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FZHProjectInitializer"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A convenient Swift project Initializer."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/fengzhihao123/FZHProjectInitializer.git", :commit => "e004159d7d4cf32734ca52680b6af1bd5516aaf2" }
+  s.source       = { :git => "https://github.com/fengzhihao123/FZHProjectInitializer.git", :commit => "7410bc3ebd16ab843176fe7721f2b35421247ff7" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
