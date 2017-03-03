@@ -36,7 +36,7 @@ public class FZHTabBarViewController: UITabBarController,FZHTabBarDelegate {
         self.customTabBar = customTabBar
     }
     
-    //    MARK:FZHTabBarDelegate
+//    MARK:FZHTabBarDelegate
     public func tabbar(_ tabbar: FZHTabBar, formWhichItem: Int, toWhichItem: Int) {
         self.selectedIndex = toWhichItem
     }
