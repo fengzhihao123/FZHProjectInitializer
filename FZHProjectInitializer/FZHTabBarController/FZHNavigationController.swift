@@ -8,13 +8,13 @@
 
 import UIKit
 public enum TabbarHideStyle {
-//    有动画
-    case tabbarHideWithAnimation
-//    无动画
-    case tabbarHideWithNoAnimation
+    //  animation
+    case animation
+    //  normal
+    case normal
 }
 public class FZHNavigationController: UINavigationController {
-    var tabbarHideStyle = TabbarHideStyle.tabbarHideWithNoAnimation
+    var tabbarHideStyle = TabbarHideStyle.normal
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ public class FZHNavigationController: UINavigationController {
     override public func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {
             let rootVC = self.viewControllers[0]
-            if tabbarHideStyle == TabbarHideStyle.tabbarHideWithAnimation {
+            if tabbarHideStyle == TabbarHideStyle.animation {
                 UIView.animate(withDuration: 0.35, animations: {
                     rootVC.tabBarController?.tabBar.transform = CGAffineTransform(translationX: 0, y: 64)
                 })
@@ -44,13 +44,13 @@ public class FZHNavigationController: UINavigationController {
                 viewController.hidesBottomBarWhenPushed = true
             }
         }
-        super.pushViewController(viewController, animated: true)
+        super.pushViewController(viewController, animated: animated)
     }
     
     public override func popToRootViewController(animated: Bool) -> [UIViewController]? {
         if self.viewControllers.count > 0 {
             let rootVC = self.viewControllers[0]
-            if tabbarHideStyle == TabbarHideStyle.tabbarHideWithAnimation {
+            if tabbarHideStyle == TabbarHideStyle.animation {
                 UIView.animate(withDuration: 0.35, animations: {
                     rootVC.tabBarController?.tabBar.transform = CGAffineTransform.identity
                 })
@@ -59,14 +59,14 @@ public class FZHNavigationController: UINavigationController {
                 rootVC.hidesBottomBarWhenPushed = false
             }
         }
-        super.popToRootViewController(animated: true)
+        super.popToRootViewController(animated: animated)
         return nil
     }
     
     public override func popViewController(animated: Bool) -> UIViewController? {
         if self.viewControllers.count > 0 {
             let rootVC = self.viewControllers[0]
-            if tabbarHideStyle == TabbarHideStyle.tabbarHideWithAnimation {
+            if tabbarHideStyle == TabbarHideStyle.animation {
                 UIView.animate(withDuration: 0.35, animations: {
                     rootVC.tabBarController?.tabBar.transform = CGAffineTransform.identity
                 })
@@ -76,7 +76,7 @@ public class FZHNavigationController: UINavigationController {
             }
         }
         let rootVC = self.viewControllers[0]
-        super.popViewController(animated: true)
+        super.popViewController(animated: animated)
         return rootVC
     }
     

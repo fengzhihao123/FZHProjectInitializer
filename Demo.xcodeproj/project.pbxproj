@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D64CC4F11E6972A600CE733A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64CC4F01E6972A600CE733A /* HomeViewController.swift */; };
+		D64CC4F31E6972B200CE733A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64CC4F21E6972B200CE733A /* MessageViewController.swift */; };
+		D64CC4F51E6972BD00CE733A /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64CC4F41E6972BD00CE733A /* MeViewController.swift */; };
+		D64CC4F71E6972C700CE733A /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64CC4F61E6972C700CE733A /* FindViewController.swift */; };
+		D64CC4F91E6972E800CE733A /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64CC4F81E6972E800CE733A /* SubViewController.swift */; };
 		D65E0A8E1E653F2300DA6A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0A8D1E653F2300DA6A5C /* AppDelegate.swift */; };
-		D65E0A901E653F2300DA6A5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0A8F1E653F2300DA6A5C /* ViewController.swift */; };
 		D65E0A931E653F2300DA6A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65E0A911E653F2300DA6A5C /* Main.storyboard */; };
 		D65E0A951E653F2300DA6A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65E0A941E653F2300DA6A5C /* Assets.xcassets */; };
 		D65E0A981E653F2300DA6A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65E0A961E653F2300DA6A5C /* LaunchScreen.storyboard */; };
@@ -23,7 +27,9 @@
 		D65E0AE61E653F9400DA6A5C /* FZHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */; };
 		D65E0AE71E653F9400DA6A5C /* FZHTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */; };
 		D65E0AE81E653F9400DA6A5C /* FZHTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE31E653F9400DA6A5C /* FZHTabBarViewController.swift */; };
-		D6BD177B1E6648D5006CB3B7 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BD177A1E6648D5006CB3B7 /* SubViewController.swift */; };
+		D6FBC7C71E70E78F003A3D5C /* FZHDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBC7C61E70E78F003A3D5C /* FZHDrawerViewController.swift */; };
+		D6FBC7C91E70E7E6003A3D5C /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBC7C81E70E7E6003A3D5C /* LeftViewController.swift */; };
+		D6FBC7CB1E70F253003A3D5C /* FZHCommonDeclare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBC7CA1E70F253003A3D5C /* FZHCommonDeclare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,9 +85,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D64CC4F01E6972A600CE733A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Class/HomeViewController.swift; sourceTree = "<group>"; };
+		D64CC4F21E6972B200CE733A /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Class/MessageViewController.swift; sourceTree = "<group>"; };
+		D64CC4F41E6972BD00CE733A /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeViewController.swift; path = Class/MeViewController.swift; sourceTree = "<group>"; };
+		D64CC4F61E6972C700CE733A /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewController.swift; path = Class/FindViewController.swift; sourceTree = "<group>"; };
+		D64CC4F81E6972E800CE733A /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubViewController.swift; path = Class/SubViewController.swift; sourceTree = "<group>"; };
 		D65E0A8A1E653F2300DA6A5C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65E0A8D1E653F2300DA6A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D65E0A8F1E653F2300DA6A5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D65E0A921E653F2300DA6A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D65E0A941E653F2300DA6A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65E0A971E653F2300DA6A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +112,9 @@
 		D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBar.swift; sourceTree = "<group>"; };
 		D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBarButton.swift; sourceTree = "<group>"; };
 		D65E0AE31E653F9400DA6A5C /* FZHTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBarViewController.swift; sourceTree = "<group>"; };
-		D6BD177A1E6648D5006CB3B7 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		D6FBC7C61E70E78F003A3D5C /* FZHDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHDrawerViewController.swift; sourceTree = "<group>"; };
+		D6FBC7C81E70E7E6003A3D5C /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftViewController.swift; path = Class/LeftViewController.swift; sourceTree = "<group>"; };
+		D6FBC7CA1E70F253003A3D5C /* FZHCommonDeclare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHCommonDeclare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D64CC4EF1E69728500CE733A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D64CC4F01E6972A600CE733A /* HomeViewController.swift */,
+				D64CC4F21E6972B200CE733A /* MessageViewController.swift */,
+				D64CC4F41E6972BD00CE733A /* MeViewController.swift */,
+				D64CC4F61E6972C700CE733A /* FindViewController.swift */,
+				D64CC4F81E6972E800CE733A /* SubViewController.swift */,
+				D6FBC7C81E70E7E6003A3D5C /* LeftViewController.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 		D65E0A811E653F2300DA6A5C = {
 			isa = PBXGroup;
 			children = (
@@ -173,9 +198,8 @@
 		D65E0A8C1E653F2300DA6A5C /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D64CC4EF1E69728500CE733A /* Class */,
 				D65E0A8D1E653F2300DA6A5C /* AppDelegate.swift */,
-				D65E0A8F1E653F2300DA6A5C /* ViewController.swift */,
-				D6BD177A1E6648D5006CB3B7 /* SubViewController.swift */,
 				D65E0A911E653F2300DA6A5C /* Main.storyboard */,
 				D65E0A941E653F2300DA6A5C /* Assets.xcassets */,
 				D65E0A961E653F2300DA6A5C /* LaunchScreen.storyboard */,
@@ -224,9 +248,11 @@
 		D65E0ADE1E653F9400DA6A5C /* FZHTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				D65E0ADF1E653F9400DA6A5C /* FZHNavigationController.swift */,
 				D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */,
 				D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */,
+				D6FBC7CA1E70F253003A3D5C /* FZHCommonDeclare.swift */,
+				D6FBC7C61E70E78F003A3D5C /* FZHDrawerViewController.swift */,
+				D65E0ADF1E653F9400DA6A5C /* FZHNavigationController.swift */,
 				D65E0AE31E653F9400DA6A5C /* FZHTabBarViewController.swift */,
 			);
 			path = FZHTabBarController;
@@ -446,9 +472,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BD177B1E6648D5006CB3B7 /* SubViewController.swift in Sources */,
-				D65E0A901E653F2300DA6A5C /* ViewController.swift in Sources */,
+				D64CC4F51E6972BD00CE733A /* MeViewController.swift in Sources */,
 				D65E0A8E1E653F2300DA6A5C /* AppDelegate.swift in Sources */,
+				D64CC4F11E6972A600CE733A /* HomeViewController.swift in Sources */,
+				D64CC4F91E6972E800CE733A /* SubViewController.swift in Sources */,
+				D64CC4F71E6972C700CE733A /* FindViewController.swift in Sources */,
+				D6FBC7C91E70E7E6003A3D5C /* LeftViewController.swift in Sources */,
+				D64CC4F31E6972B200CE733A /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +504,8 @@
 			files = (
 				D65E0AE71E653F9400DA6A5C /* FZHTabBarButton.swift in Sources */,
 				D65E0AE61E653F9400DA6A5C /* FZHTabBar.swift in Sources */,
+				D6FBC7CB1E70F253003A3D5C /* FZHCommonDeclare.swift in Sources */,
+				D6FBC7C71E70E78F003A3D5C /* FZHDrawerViewController.swift in Sources */,
 				D65E0AE81E653F9400DA6A5C /* FZHTabBarViewController.swift in Sources */,
 				D65E0AE41E653F9400DA6A5C /* FZHNavigationController.swift in Sources */,
 			);
@@ -633,10 +665,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 93J5P3W89X;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengzhihao.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengzhihao.Animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -647,10 +680,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 93J5P3W89X;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengzhihao.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengzhihao.Animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

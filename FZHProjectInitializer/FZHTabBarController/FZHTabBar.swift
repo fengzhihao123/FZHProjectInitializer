@@ -31,7 +31,7 @@ public class FZHTabBar: UIView {
         self.tabBarButtons.add(button)
         button.addTarget(self, action: #selector(buttonDidTouch), for: .touchDown)
        self.addSubview(button)
-//        默认选中
+        //  默认选中
         if self.tabBarButtons.count == 1 {
             self.buttonDidTouch((self.tabBarButtons[0] as? FZHTabBarButton)!)
         }
@@ -39,7 +39,7 @@ public class FZHTabBar: UIView {
     
     func buttonDidTouch(_ button: FZHTabBarButton) -> Void {
         fzhTabbarDelegate.tabbar(self, formWhichItem: self.selectedButton.tag, toWhichItem: button.tag)
-//        控制器选中按钮
+        //  控制器选中按钮
         self.selectedButton.isSelected = false
         button.isSelected = true
         self.selectedButton = button
@@ -47,19 +47,19 @@ public class FZHTabBar: UIView {
 
     override public func layoutSubviews() {
         super.layoutSubviews()
-//        button
+        //  button
         let buttonW = self.frame.size.width/CGFloat(self.tabBarButtons.count)
         let buttonH = self.frame.size.height
         let buttonY = 0
         
         for index in 0...self.tabBarButtons.count - 1 {
-//            取出按钮
+            //  取出按钮
             let button: UIButton = self.tabBarButtons[index] as! UIButton
-//            设置按钮的frame
+            //  设置按钮的frame
             let buttonX = CGFloat(index) * buttonW
             button.frame = CGRect(x: buttonX, y: CGFloat(buttonY), width: buttonW, height: buttonH)
              self.addSubview(button)
-//            绑定tag
+            //  绑定tag
             button.tag = index
         }
     }

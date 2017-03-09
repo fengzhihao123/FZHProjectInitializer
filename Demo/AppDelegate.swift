@@ -12,22 +12,27 @@ import FZHProjectInitializer
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var fzhDrawerVC = FZHDrawerViewController()
+    let leftVC = LeftViewController()
+    let fzhTabBar = FZHTabBarViewController()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let firstVC = ViewController()
-        let secondVC = UIViewController()
-        let thirdVC = UIViewController()
-        let fourVC = UIViewController()
+        let homeVC = HomeViewController()
+        let findVC = FindViewController()
+        let messageVC = MessageViewController()
+        let meVC = MeViewController()
         
-        let fzhTabBar = FZHTabBarViewController()
         fzhTabBar.selectColor = UIColor.red
         fzhTabBar.normalColor = UIColor.brown
-        fzhTabBar.isAnimation = TabbarHideStyle.tabbarHideWithAnimation
-        fzhTabBar.setupChildVC(firstVC, title: "first", imageName: "normal", selectImageName: "select")
-        fzhTabBar.setupChildVC(secondVC, title: "second", imageName: "normal", selectImageName: "select")
-        fzhTabBar.setupChildVC(thirdVC, title: "third", imageName: "normal", selectImageName: "select")
-        fzhTabBar.setupChildVC(fourVC, title: "four", imageName: "normal", selectImageName: "select")
-        window?.rootViewController = fzhTabBar
+        fzhTabBar.tabBarHideStyle = TabbarHideStyle.normal
+        fzhTabBar.setupChildVC(childVC: homeVC, title: "home", imageName: "home_normal", selectImageName: "home_select")
+        fzhTabBar.setupChildVC(childVC: findVC, title: "find", imageName: "find_normal", selectImageName: "find_select")
+        fzhTabBar.setupChildVC(childVC: messageVC, title: "message", imageName: "message_normal", selectImageName: "message_select")
+        fzhTabBar.setupChildVC(childVC: meVC, title: "me", imageName: "me_normal", selectImageName: "me_select")
+//        window?.rootViewController = fzhTabBar
+        
+        fzhDrawerVC = fzhDrawerVC.initSubVC(leftControl: leftVC, mainControl: fzhTabBar) as! FZHDrawerViewController
+        self.window?.rootViewController = fzhDrawerVC
         return true
     }
 

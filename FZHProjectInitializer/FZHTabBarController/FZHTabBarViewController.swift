@@ -13,13 +13,13 @@ public class FZHTabBarViewController: UITabBarController,FZHTabBarDelegate {
     public weak var customTabBar = FZHTabBar()
     public var selectColor = UIColor.blue
     public var normalColor = UIColor.black
-    public var isAnimation = TabbarHideStyle.tabbarHideWithNoAnimation
+    public var tabBarHideStyle = TabbarHideStyle.normal
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         setupTabbar()
     }
-//    delete origin tabbar
+
     override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         for child in self.tabBar.subviews {
@@ -30,28 +30,24 @@ public class FZHTabBarViewController: UITabBarController,FZHTabBarDelegate {
     }
     
     func setupTabbar() -> Void {
-        let customTabBar = FZHTabBar.init(frame: self.tabBar.bounds)
+        let customTabBar = FZHTabBar(frame: self.tabBar.bounds)
         customTabBar.fzhTabbarDelegate = self
         self.tabBar.addSubview(customTabBar)
         self.customTabBar = customTabBar
     }
     
-//    MARK:FZHTabBarDelegate
+    //  MARK:FZHTabBarDelegate
     public func tabbar(_ tabbar: FZHTabBar, formWhichItem: Int, toWhichItem: Int) {
         self.selectedIndex = toWhichItem
     }
     
-    public func setupChildVC(_ childVC: UIViewController,title: String,imageName: String,selectImageName: String){
-        
+    public func setupChildVC(childVC: UIViewController, title: String, imageName: String, selectImageName: String){
         childVC.title = title
-        childVC.tabBarItem.image = UIImage.init(named: imageName)
-//        不在渲染图片
-        childVC.tabBarItem.selectedImage = UIImage.init(named: selectImageName)?.withRenderingMode(.alwaysOriginal)
-        
-        let navigationCtrl = FZHNavigationController.init(rootViewController: childVC)
-        navigationCtrl.tabbarHideStyle = isAnimation
+        childVC.tabBarItem.image = UIImage(named: imageName)
+        childVC.tabBarItem.selectedImage = UIImage(named: selectImageName)?.withRenderingMode(.alwaysOriginal)
+        let navigationCtrl = FZHNavigationController(rootViewController: childVC)
+        navigationCtrl.tabbarHideStyle = tabBarHideStyle
         self.addChildViewController(navigationCtrl)
-//        添加tabbar内部按钮
         self.customTabBar!.addTabbarButtonWith(item: childVC.tabBarItem, selectColor: selectColor, normalColor: normalColor)
     }
 }
