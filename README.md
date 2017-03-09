@@ -10,20 +10,20 @@ FZHProjectInitializer is a convenient initialize project library written in Swif
 
 ## Features
 
-Hide TabBar two ways
-* no animations
+### Hide TabBar two ways
+
+* Normal
 ```
-let rootVC = FZHTabBarViewController()
-rootVC.isAnimation = TabbarHideStyle.tabbarHideWithNoAnimation
+let fzhTabBar = FZHTabBarViewController()
+fzhTabBar.tabBarHideStyle = TabbarHideStyle.normal
 ```
 ![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/NoAnimation.gif)
 
-* have animations
+* Animation
 ```
-let rootVC = FZHTabBarViewController()
-rootVC.isAnimation = TabbarHideStyle.tabbarHideWithAnimation
+let fzhTabBar = FZHTabBarViewController()
+fzhTabBar.tabBarHideStyle = TabbarHideStyle.animation
 ```
-
 ![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/Animation.gif)
 
 ## Requirements
@@ -50,18 +50,18 @@ pod install
 Example
 
 ```
-let fzhTabBar = FZHTabBarViewController()
+let homeVC = HomeViewController()
+let findVC = FindViewController()
+let messageVC = MessageViewController()
+let meVC = MeViewController()
+        
 fzhTabBar.selectColor = UIColor.red
 fzhTabBar.normalColor = UIColor.brown
-let firstVC = UIViewController()
-let secondVC = UIViewController()
-let thirdVC = UIViewController()
-let fourVC = UIViewController()  
-
-fzhTabBar.setupChildVC(firstVC, title: "first", imageName: "", selectImageName: "")
-fzhTabBar.setupChildVC(secondVC, title: "second", imageName: "", selectImageName: "")
-fzhTabBar.setupChildVC(thirdVC, title: "third", imageName: "", selectImageName: "")
-fzhTabBar.setupChildVC(fourVC, title: "four", imageName: "", selectImageName: "")
+fzhTabBar.tabBarHideStyle = TabbarHideStyle.animation
+fzhTabBar.setupChildVC(childVC: homeVC, title: "home", imageName: "home_normal", selectImageName: "home_select")
+fzhTabBar.setupChildVC(childVC: findVC, title: "find", imageName: "find_normal", selectImageName: "find_select")
+fzhTabBar.setupChildVC(childVC: messageVC, title: "message", imageName: "message_normal", selectImageName: "message_select")
+fzhTabBar.setupChildVC(childVC: meVC, title: "me", imageName: "me_normal", selectImageName: "me_select")
 window?.rootViewController = fzhTabBar
 ```
 
