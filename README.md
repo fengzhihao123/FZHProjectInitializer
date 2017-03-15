@@ -109,6 +109,7 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {/
 ```
 
 Effect:
+
 ![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/leftDrawer.gif)
 
 ## Contributing
