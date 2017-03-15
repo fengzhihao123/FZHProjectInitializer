@@ -19,7 +19,7 @@ public class FZHDrawerViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    public func initSubVC(leftControl: UIViewController,mainControl: UIViewController) -> UIViewController {
+    public func initSubVC(leftControl: UIViewController,mainControl: UIViewController) -> FZHDrawerViewController {
         leftVC = leftControl
         mainVC = mainControl
         

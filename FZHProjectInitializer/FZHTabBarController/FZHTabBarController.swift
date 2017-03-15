@@ -8,19 +8,19 @@
 
 import UIKit
 
-public class FZHTabBarViewController: UITabBarController,FZHTabBarDelegate {
+open class FZHTabBarController: UITabBarController,FZHTabBarDelegate {
 
     public weak var customTabBar = FZHTabBar()
     public var selectColor = UIColor.blue
     public var normalColor = UIColor.black
     public var tabBarHideStyle = TabbarHideStyle.normal
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupTabbar()
     }
 
-    override public func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         for child in self.tabBar.subviews {
             if child.isKind(of: UIControl.self) {

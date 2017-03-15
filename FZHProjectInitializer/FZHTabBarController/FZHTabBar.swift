@@ -52,16 +52,19 @@ public class FZHTabBar: UIView {
         let buttonH = self.frame.size.height
         let buttonY = 0
         
-        for index in 0...self.tabBarButtons.count - 1 {
-            //  取出按钮
-            let button: UIButton = self.tabBarButtons[index] as! UIButton
-            //  设置按钮的frame
-            let buttonX = CGFloat(index) * buttonW
-            button.frame = CGRect(x: buttonX, y: CGFloat(buttonY), width: buttonW, height: buttonH)
-             self.addSubview(button)
-            //  绑定tag
-            button.tag = index
+        if self.tabBarButtons.count > 0 {
+            for index in 0...self.tabBarButtons.count - 1 {
+                //  取出按钮
+                let button: UIButton = self.tabBarButtons[index] as! UIButton
+                //  设置按钮的frame
+                let buttonX = CGFloat(index) * buttonW
+                button.frame = CGRect(x: buttonX, y: CGFloat(buttonY), width: buttonW, height: buttonH)
+                self.addSubview(button)
+                //  绑定tag
+                button.tag = index
+            }
         }
+        
     }
     
 }

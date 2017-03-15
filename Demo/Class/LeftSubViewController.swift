@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-class LeftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LeftSubViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let tableView = UITableView()
     let SCREEN_WIDTH = UIScreen.main.bounds.size.width
@@ -23,7 +22,7 @@ class LeftViewController: UIViewController, UITableViewDelegate, UITableViewData
         view.addSubview(tableView)
     }
     
-    //    MARK: UITableViewDataSource
+    //  MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
     }
@@ -33,7 +32,7 @@ class LeftViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.textLabel?.text = "left"
         return cell
     }
-    //    MARK: UITableViewDelegate
+    //  MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let temAppDelegate = UIApplication.shared.delegate as! AppDelegate
         let subVC = SubViewController()

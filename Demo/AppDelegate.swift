@@ -13,25 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var fzhDrawerVC = FZHDrawerViewController()
-    let leftVC = LeftViewController()
-    let fzhTabBar = FZHTabBarViewController()
+    let leftVC = LeftSubViewController()
+    let fzhTabBar = ExampleTabBarViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let homeVC = HomeViewController()
-        let findVC = FindViewController()
-        let messageVC = MessageViewController()
-        let meVC = MeViewController()
-        
-        fzhTabBar.selectColor = UIColor.red
-        fzhTabBar.normalColor = UIColor.brown
-        fzhTabBar.tabBarHideStyle = TabbarHideStyle.normal
-        fzhTabBar.setupChildVC(childVC: homeVC, title: "home", imageName: "home_normal", selectImageName: "home_select")
-        fzhTabBar.setupChildVC(childVC: findVC, title: "find", imageName: "find_normal", selectImageName: "find_select")
-        fzhTabBar.setupChildVC(childVC: messageVC, title: "message", imageName: "message_normal", selectImageName: "message_select")
-        fzhTabBar.setupChildVC(childVC: meVC, title: "me", imageName: "me_normal", selectImageName: "me_select")
-//        window?.rootViewController = fzhTabBar
-        
-        fzhDrawerVC = fzhDrawerVC.initSubVC(leftControl: leftVC, mainControl: fzhTabBar) as! FZHDrawerViewController
+        fzhDrawerVC = fzhDrawerVC.initSubVC(leftControl: leftVC, mainControl: fzhTabBar)
         self.window?.rootViewController = fzhDrawerVC
         return true
     }

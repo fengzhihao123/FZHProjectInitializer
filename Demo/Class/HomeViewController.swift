@@ -9,10 +9,6 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        navigationController?.pushViewController(SubViewController(), animated: true)
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
