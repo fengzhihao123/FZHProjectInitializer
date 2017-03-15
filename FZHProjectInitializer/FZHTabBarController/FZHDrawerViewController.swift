@@ -38,14 +38,14 @@ public class FZHDrawerViewController: UIViewController {
         //  当手势移动时
         if pan.state == .changed {
         //  当主视图没移动时右滑不移动主视图，当主视图移动的时候，右滑复位主视图
-            if (point.x > 0) || (self.mainVC.view.frame.origin.x > 0) {
+            if (point.x > 0) {
                 UIView.animate(withDuration: 0.37) {
                     self.mainVC.view.transform = CGAffineTransform(translationX: point.x, y: 0)
                 }
             }
         //  当手势取消或者结束
-        }else if (pan.state == .cancelled) || (pan.state == .ended){
-            if point.x > 200 && isShow == false{
+        }else if (pan.state == .cancelled) || (pan.state == .ended) {
+            if point.x > 100 && isShow == false {
                 showLeftView()
             }else{
                 hideLeftView()
