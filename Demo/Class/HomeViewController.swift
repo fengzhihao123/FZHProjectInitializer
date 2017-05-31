@@ -9,11 +9,20 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    let pushButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLeftItem()
+        setupButton()
         view.backgroundColor = UIColor.red
+    }
+    
+    func setupButton() {
+        pushButton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        pushButton.setTitle("push", for: .normal)
+        pushButton.addTarget(self, action: #selector(pushDidTouch), for: .touchUpInside)
+        view.addSubview(pushButton)
     }
     
     func setupLeftItem() -> Void {
@@ -28,5 +37,9 @@ class HomeViewController: UIViewController {
         }else{
             temAppDelegate.fzhDrawerVC.showLeftView()
         }
+    }
+    
+    func pushDidTouch() {
+        navigationController?.pushViewController(HomeDetailViewController(), animated: true)
     }
 }

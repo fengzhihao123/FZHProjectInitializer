@@ -27,6 +27,8 @@
 		D65E0AE61E653F9400DA6A5C /* FZHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */; };
 		D65E0AE71E653F9400DA6A5C /* FZHTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */; };
 		D65E0AE81E653F9400DA6A5C /* FZHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65E0AE31E653F9400DA6A5C /* FZHTabBarController.swift */; };
+		D6DC6CF51EDEAF14009F5212 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DC6CF41EDEAF14009F5212 /* HomeDetailViewController.swift */; };
+		D6DC6CF71EDEAF9B009F5212 /* HomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DC6CF61EDEAF9B009F5212 /* HomeSecondViewController.swift */; };
 		D6FBC7C71E70E78F003A3D5C /* FZHDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBC7C61E70E78F003A3D5C /* FZHDrawerViewController.swift */; };
 		D6FBC7C91E70E7E6003A3D5C /* LeftSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBC7C81E70E7E6003A3D5C /* LeftSubViewController.swift */; };
 		D6FBC7CB1E70F253003A3D5C /* FZHCommonDeclare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBC7CA1E70F253003A3D5C /* FZHCommonDeclare.swift */; };
@@ -113,6 +115,8 @@
 		D65E0AE11E653F9400DA6A5C /* FZHTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBar.swift; sourceTree = "<group>"; };
 		D65E0AE21E653F9400DA6A5C /* FZHTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBarButton.swift; sourceTree = "<group>"; };
 		D65E0AE31E653F9400DA6A5C /* FZHTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTabBarController.swift; sourceTree = "<group>"; };
+		D6DC6CF41EDEAF14009F5212 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeDetailViewController.swift; path = Class/HomeDetailViewController.swift; sourceTree = "<group>"; };
+		D6DC6CF61EDEAF9B009F5212 /* HomeSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeSecondViewController.swift; path = Class/HomeSecondViewController.swift; sourceTree = "<group>"; };
 		D6FBC7C61E70E78F003A3D5C /* FZHDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHDrawerViewController.swift; sourceTree = "<group>"; };
 		D6FBC7C81E70E7E6003A3D5C /* LeftSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftSubViewController.swift; path = Class/LeftSubViewController.swift; sourceTree = "<group>"; };
 		D6FBC7CA1E70F253003A3D5C /* FZHCommonDeclare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHCommonDeclare.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				D64CC4F81E6972E800CE733A /* SubViewController.swift */,
 				D6FBC7C81E70E7E6003A3D5C /* LeftSubViewController.swift */,
 				D6FBC7CC1E71030A003A3D5C /* ExampleTabBarViewController.swift */,
+				D6DC6CF41EDEAF14009F5212 /* HomeDetailViewController.swift */,
+				D6DC6CF61EDEAF9B009F5212 /* HomeSecondViewController.swift */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -478,6 +484,8 @@
 				D64CC4F51E6972BD00CE733A /* MeViewController.swift in Sources */,
 				D6FBC7CD1E71030A003A3D5C /* ExampleTabBarViewController.swift in Sources */,
 				D65E0A8E1E653F2300DA6A5C /* AppDelegate.swift in Sources */,
+				D6DC6CF71EDEAF9B009F5212 /* HomeSecondViewController.swift in Sources */,
+				D6DC6CF51EDEAF14009F5212 /* HomeDetailViewController.swift in Sources */,
 				D64CC4F11E6972A600CE733A /* HomeViewController.swift in Sources */,
 				D64CC4F91E6972E800CE733A /* SubViewController.swift in Sources */,
 				D64CC4F71E6972C700CE733A /* FindViewController.swift in Sources */,
