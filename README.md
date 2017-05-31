@@ -5,7 +5,7 @@ FZHProjectInitializer is a convenient initialize project library written in Swif
 
 ## Intro
 
-* version: 0.0.3
+* version: 0.0.4
 * platform: iOS
 
 ## Features
@@ -81,8 +81,36 @@ fzhTabBar.tabBarHideStyle = TabbarHideStyle.animation
 
 ### Left Drawer view
 
+In Appdelegate.swift
 
+```
+var fzhDrawerVC = FZHDrawerViewController()
+let leftVC = LeftSubViewController()//your left viewcontroller
+let fzhTabBar = ExampleTabBarViewController()
+   
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    fzhDrawerVC = fzhDrawerVC.initSubVC(leftControl: leftVC, mainControl: fzhTabBar)
+    self.window?.rootViewController = fzhDrawerVC
+    return true
+}
+```
 
+In your Left viewcontroller:
+
+```
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {//Where you want to push
+     let temAppDelegate = UIApplication.shared.delegate as! AppDelegate
+     let subVC = SubViewController()//your sub viewcontroller
+     let mainNavi = temAppDelegate.fzhTabBar.viewControllers?[0] as! UINavigationController
+   
+     mainNavi.pushViewController(subVC, animated: false)
+     temAppDelegate.fzhDrawerVC.hideLeftView()
+    }
+```
+
+Effect:
+
+![gif](https://github.com/fengzhihao123/FZHProjectInitializer/blob/master/leftDrawer.gif)
 
 ## Contributing
 * Fork it
