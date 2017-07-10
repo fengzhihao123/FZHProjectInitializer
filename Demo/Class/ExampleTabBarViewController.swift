@@ -23,7 +23,7 @@ class ExampleTabBarViewController: FZHTabBarController {
         
         self.selectColor = UIColor.red
         self.normalColor = UIColor.brown
-        self.tabBarHideStyle = TabbarHideStyle.normal
+        self.tabBarHideStyle = TabbarHideStyle.animation
         self.setupChildVC(childVC: homeVC, title: "home", imageName: "home_normal", selectImageName: "home_select")
         self.setupChildVC(childVC: findVC, title: "find", imageName: "find_normal", selectImageName: "find_select")
         self.setupChildVC(childVC: messageVC, title: "message", imageName: "message_normal", selectImageName: "message_select")

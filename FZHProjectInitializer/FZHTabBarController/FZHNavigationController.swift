@@ -32,6 +32,7 @@ public class FZHNavigationController: UINavigationController, UINavigationContro
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     //pushViewController
     override public func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {

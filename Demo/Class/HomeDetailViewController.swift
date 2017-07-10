@@ -22,12 +22,11 @@ class HomeDetailViewController: UIViewController {
         popButton.backgroundColor = UIColor.black
         popButton.frame = CGRect(x: 100, y: 200, width: 100, height: 100)
         popButton.addTarget(self, action: #selector(popButtonDidTouch), for: .touchUpInside)
-        popButton.setTitle("pop", for: .normal)
+        popButton.setTitle("push", for: .normal)
         view.addSubview(popButton)
     }
     
     func popButtonDidTouch() {
         navigationController?.pushViewController(HomeSecondViewController(), animated: true)
-//        navigationController?.popViewController(animated: true)
     }
 }

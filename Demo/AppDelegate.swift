@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let fzhTabBar = ExampleTabBarViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        fzhDrawerVC = fzhDrawerVC.initSubVC(leftControl: leftVC, mainControl: fzhTabBar)
-        self.window?.rootViewController = fzhDrawerVC
+//        fzhDrawerVC = fzhDrawerVC.initSubVC(leftControl: leftVC, mainControl: fzhTabBar)
+        self.window?.rootViewController = fzhTabBar
         return true
     }
 
